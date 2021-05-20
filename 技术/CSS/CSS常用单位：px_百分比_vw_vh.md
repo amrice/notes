@@ -68,3 +68,8 @@ vw是相对于视口的宽度来说的，它不会随容器的宽度改变
 
 
 还有vmin和vmax两个单位，他们会根据视口的宽度和高度来选取其中一个。比如视口是800px * 600px，那么50vmin就表示50%的min(宽度，高度)，即300px。vmax同理。
+
+### 参考
+
+http://www.js-craft.io/blog/know-your-size-css-units-explained-part-1-pixels-percentages-and-viewpoints-units/
+

@@ -1,14 +1,5 @@
-[#]: subject: "4 essential characteristics of successful APIs"
-[#]: via: "https://opensource.com/article/21/5/successful-apis"
-[#]: author: "Tom Wilson https://opensource.com/users/tomwillson4014"
-[#]: collector: "lujun9972"
-[#]: translator: "ywxgod"
-[#]: reviewer: " "
-[#]: publisher: " "
-[#]: url: " "
+## 成功API的4个基本特征
 
-成功API的4个基本特征
-======
 创建一个API(译者注：应用程序接口)，我们所要做的远远不止是让它能"正常工作。"
 ![看地图][1]
 

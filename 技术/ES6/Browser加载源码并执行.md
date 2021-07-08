@@ -1,4 +1,4 @@
-前面看过在node中如何加载远程代码执行，这里是针对浏览器环境的执行方法。想了解node环境的处理方法，可以连接：xxxxxx。
+前面看过在node中如何加载远程代码执行，这里是针对浏览器环境的执行方法。想了解node环境的处理方法，可以连接：[Node加载JS源码并执行](https://caoos.gitee.io/blog/2021-07-08/load-and-run-scripts-in-node/)。
 
 ## 本地加载代码
 

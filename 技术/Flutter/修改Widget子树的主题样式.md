@@ -38,7 +38,6 @@ Center(
 
 ## 其他知识点
 
--   可以通过`theme`属性修改`MaterialApp`的主题样式，theme的值时一个`ThemeData`实例。
--   `ThemeData`类提供了各种样式的设置，比如`primaryColor`，`canvasColor`等
--   主题样式会根据所运行的环境不同而表现不同，如果想在当前环境查看其他不同环境的样式表现，需要设置`ThemeData`的`platform`属性。`platform`属性取值来自`TargetPlatform`类，此类定义了`iOS`，`android`等多个不同的运行环境。
-
+- 可以通过`theme`属性修改`MaterialApp`的主题样式，theme的值时一个`ThemeData`实例。
+- `ThemeData`类提供了各种样式的设置，比如`primaryColor`，`canvasColor`等
+- 主题样式会根据所运行的环境不同而表现不同，如果想在当前环境查看其他不同环境的样式表现，需要设置`ThemeData`的`platform`属性。`platform`属性取值来自`TargetPlatform`类，此类定义了`iOS`，`android`等多个不同的运行环境。

@@ -98,7 +98,7 @@ buildscript {
     repositories {
         // google()
         // jcenter()
-		maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
     }
@@ -126,7 +126,7 @@ class FlutterPlugin implements Plugin<Project> {
 repositories {
     // google()
     // jcenter()
-	maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
     maven { url 'https://maven.aliyun.com/repository/jcenter' }
     maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
     maven {

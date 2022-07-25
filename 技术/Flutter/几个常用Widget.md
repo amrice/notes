@@ -6,10 +6,10 @@ AppBar是Scaffold微件的一个属性，它负责呈现应用的顶部区域，
 
 ![app_bar](https://cdn.jsdelivr.net/gh/ywxgod/image_source/imgs20210617212948.png)
 
--   leading：会显示在title之前，需要给一个Widget实例，通常我们可以给一个IconButton或BackButton。
--   title：也是一个Widget实例，这里不限于Text微件。
--   actions：一组右对齐的Widgets，通常情况是一些IconButton。
--   flexibleSpace：我们可以把AppBar看成有两层，一层放置前面说的各种leading，title，actions这些，另一层就是flexibleSpace所指定的Widget，且它处于底层，高度跟AppBar一致。
+- leading：会显示在title之前，需要给一个Widget实例，通常我们可以给一个IconButton或BackButton。
+- title：也是一个Widget实例，这里不限于Text微件。
+- actions：一组右对齐的Widgets，通常情况是一些IconButton。
+- flexibleSpace：我们可以把AppBar看成有两层，一层放置前面说的各种leading，title，actions这些，另一层就是flexibleSpace所指定的Widget，且它处于底层，高度跟AppBar一致。
 
 ```dart
 AppBar(
@@ -66,8 +66,6 @@ flexibleSpace: SafeArea(
 最终的效果
 
 ![flexibleSpaceSafeArea](https://cdn.jsdelivr.net/gh/ywxgod/image_source/imgs20210617224221.png)
-
-
 
 AppBar还有一个bottom属性，你需要给bottom赋值一个实现PrefferedSizeWidget接口的微件，PrefferedSizeWidget会根据你给定的宽高设置高度，它不受子微件的布局限制。
 
@@ -428,6 +426,3 @@ ButtonBar(
 ```
 
 所以ButtonBar可以看成是一个动态的Column或Row？当子组件垂直排列时就是一个Column，当子组件水平排列时就是一个Row？
-
-
-

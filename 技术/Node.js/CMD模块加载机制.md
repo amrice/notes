@@ -101,4 +101,3 @@ function require(moduleName){
 ### 参考
 
 文章内容参考自：《Node.js设计模式第三版》的第二章
-

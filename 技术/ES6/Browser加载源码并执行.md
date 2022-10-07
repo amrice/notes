@@ -16,7 +16,7 @@ import scripts from './scripts?raw';
 
 ```typescript
 async function getFileFromRemote(filename) {
-	// 前面的步骤跟node环境一样，只是最后一句不一样
+    // 前面的步骤跟node环境一样，只是最后一句不一样
     ......
     // 将base64编码的文件内容转为utf8字符串
     return decodeURIComponent(escape(window.atob(data.data.content)));
@@ -31,8 +31,8 @@ async function getFileFromRemote(filename) {
 
 浏览器中执行JS，最先想到的就是eval，虽然eval可以执行JS代码，但不安全，我们可以从MDN中看到下面的话
 
->   ## [永远不要使用 `eval`！](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval#don.27t_use_eval.21)
->
+> ## [永远不要使用 `eval`！](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/eval#don.27t_use_eval.21)
+> 
 >   `eval()` 是一个危险的函数， 它使用与调用者相同的权限执行代码。如果你用 `eval()` 运行的字符串代码被恶意方（不怀好意的人）修改，您最终可能会在您的网页/扩展程序的权限下，在用户计算机上运行恶意代码。更重要的是，第三方代码可以看到某一个 `eval()` 被调用时的作用域，这也有可能导致一些不同方式的攻击。
 
 简单说，eval函数所执行的代码也是能访问调用eval的函数所在作用域，假设eval要执行的代码中的变量名跟调用eval的作用域中的某些变量名重名，那么这些变量将会被传入所执行的代码中。所以MDN推荐我们使用Function来执行函数。
@@ -97,8 +97,6 @@ console.log('c' in p, p.c);
 ```
 
 上面的has始终返回true，这可以保证所有in操作的结果为true，即任何属性都会存在于o中。这里的第三行要注意的是，in操作判断的是原对象，所以`prop in obj`还是false。除非改成`prop in receiver`，或者取消第四行的注释。
-
-
 
 经过上面的准备工作，我们终于可以来实现无污染的代码执行了。
 

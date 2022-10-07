@@ -26,7 +26,7 @@ app.engine('handlebars', expressHandlebars({
 
 上面的配置只能使用一个布局文件，那我们如何使用不同的布局来渲染不同的页面呢？这就要用到res.render方法。
 
-下面是使用默认布局，渲染views/foo.handlebars视图。
+下面是使用默认布局，渲染views/foo.handlebars视图。 
 
 ```javascript
 app.get('/foo', (req, res) => res.render('foo'));
@@ -126,14 +126,14 @@ partials的默认路径是views/partials/*.handlebars，假设我们定义一个
 
 ```handlebars
 <div class="my-list">
-	<ol>
-	{{#each partials.listData}}
-		<li>
-			<span>{{label}}</span> / 
-			<span>{{icon}}</span>
-		</li>
-	{{/each}}
-	</ol>
+    <ol>
+    {{#each partials.listData}}
+        <li>
+            <span>{{label}}</span> / 
+            <span>{{icon}}</span>
+        </li>
+    {{/each}}
+    </ol>
 </div>
 ```
 
@@ -179,12 +179,3 @@ app.use(addPartialsContext);
 ```
 
 {{> partial_name}} 这个语法实现在视图中使用某个名称为partial_name的partials，handlebars会默认去views/partials下查找【partial_name.handlebars】文件。
-
-
-
-
-
-
-
-
-
